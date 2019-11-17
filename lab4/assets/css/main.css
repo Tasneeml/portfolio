@@ -28,9 +28,11 @@ section, summary, time, mark, audio, video {
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
-
+	
+	
 body {
 	line-height: 1;
+	font-family: Lucida Sans Typewriter ;
 }
 
 ol, ul {
@@ -49,6 +51,7 @@ blockquote, q {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+	font-family: Lucida Sans Typewriter ;
 }
 
 body {
@@ -89,6 +92,7 @@ input, select, textarea {
 		font-weight: 300;
 		line-height: 1.75em;
 		color: rgb(114, 43, 90);
+		font-family: Lucida Sans Typewriter ;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -152,6 +156,7 @@ input, select, textarea {
 
 	footer {
 		margin: 2em 0 0 0;
+		font-family: Lucida Sans Typewriter ;
 	}
 
 	strong, b {
@@ -162,6 +167,7 @@ input, select, textarea {
 	em, i {
 		font-style: italic;
 	}
+	
 
 	a {
 		text-decoration: none;
@@ -204,6 +210,7 @@ input, select, textarea {
 
 	p, ul, ol, dl, table {
 		margin-bottom: 2em;
+		border: 1px solid rgb(179, 53, 126);
 	}
 
 	br.clear {
@@ -211,6 +218,7 @@ input, select, textarea {
 	}
 
 /* Container */
+
 
 	.container {
 		margin: 0 auto;
@@ -258,6 +266,7 @@ input, select, textarea {
 
 		}
 
+		
 /* Row */
 
 	.row {
@@ -500,6 +509,7 @@ input, select, textarea {
 				.row.gtr-200.gtr-uniform > * {
 					padding-top: 80px;
 				}
+				
 
 		@media screen and (min-width: 961px) and (max-width: 1880px) {
 
@@ -1752,17 +1762,20 @@ input, select, textarea {
 		.image img {
 			display: block;
 			width: 100%;
+			
 		}
 
 		.image.avatar48 {
-			width: 48px;
+			width: 15px;
 			height: 48px;
-			background: rgb(240, 231, 231);
+		
 		}
 
 			.image.avatar48 img {
-				width: 48px;
-				height: 48px;
+				width: 90px;
+				height: 100px;
+				border: rgb(209, 64, 137) solid;
+				
 			}
 
 		.image.fit {
@@ -1807,7 +1820,7 @@ input, select, textarea {
 		padding-left: 1.25em;
 	}
 
-		ol li {
+		ol l,i {
 			padding-left: 0.25em;
 		}
 
@@ -1913,6 +1926,7 @@ input, select, textarea {
 
 		table tbody tr:nth-child(2n+2) {
 			background: #f4f4f4;
+			
 		}
 
 		table td {
@@ -1924,6 +1938,7 @@ input, select, textarea {
 			padding: 0.5em 1em 0.5em 1em;
 			color: #fff;
 			background: #222729 url("images/overlay.png");
+			
 		}
 
 		table thead {
@@ -2189,6 +2204,9 @@ input, select, textarea {
 
 /* Main */
 
+
+
+
 	#main {
 		margin-left: 375px;
 	}
@@ -2199,7 +2217,6 @@ input, select, textarea {
 			padding: 4em 0;
 			box-shadow: inset 0 1px 0 0 rgba(202, 199, 199, 0.05), inset 0 0.1em 0.1em 0 rgba(243, 242, 242, 0.025);
 			text-align: center;
-			background-image: url("images/overlay.png");
 		}
 
 			#main > section.dark {
@@ -2232,6 +2249,8 @@ input, select, textarea {
 
 			#main > section.one {
 				background-color: rgb(17, 1, 11);
+				position: relative;
+				z-index: 1;
 			}
 
 			#main > section.two {
@@ -2245,6 +2264,7 @@ input, select, textarea {
 			#main > section.four {
 				background-color: #050105;
 			}
+			
 
 /* Wide */
 
@@ -2266,6 +2286,7 @@ input, select, textarea {
 
 			#footer {
 				margin-left: 300px;
+				font-family: Lucida Sans Typewriter ;
 			}
 
 		/* Main */
@@ -2426,6 +2447,7 @@ input, select, textarea {
 				background: #000000 url("images/overlay.png");
 				box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.125);
 			}
+			
 
 				#header .top {
 					position: relative;
@@ -2552,6 +2574,7 @@ input, select, textarea {
 
 /* Mobile */
 
+
 	@media screen and (max-width: 736px) {
 
 		/* Basic */
@@ -2606,3 +2629,14 @@ input, select, textarea {
 				}
 
 	}
+	video{
+		width: 100%;
+		height: auto;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		opacity: 0.5;
+
+	}
+	
